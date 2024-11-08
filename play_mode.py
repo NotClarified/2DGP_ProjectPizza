@@ -2,7 +2,8 @@ from pico2d import *
 
 import game_framework
 import game_world
-from pimento import Pimento1
+from dough import Dough1
+from pimento import Pimento1, Pimento2, Pimento3
 
 
 def handle_events():
@@ -16,8 +17,14 @@ def init():
     global running
 
     running = True
-    pimento = Pimento1()
-    game_world.add_object(pimento,1)
+    pimento1 = Pimento1()
+    pimento2 = Pimento2()
+    pimento3 = Pimento3()
+    dough1 = Dough1()
+    game_world.add_object(pimento1,2)
+    game_world.add_object(pimento2,2)
+    game_world.add_object(pimento3,2)
+    game_world.add_object(dough1,1)
 def finish():
     game_world.clear()
     pass

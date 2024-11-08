@@ -42,9 +42,9 @@ class Pimento1:
 class Pimento2:
     image = None
 
-    def __init__(self, x = 0, y = 0, size = 1):
+    def __init__(self, x = 200, y = 200, size = 1):
         if Pimento2.image == None:
-            Pimento2.image = load_image('/asset/topping/pimento2.png')
+            Pimento2.image = load_image('asset/3. topping/pimento2.png')
         # 위치 크기 조절을 위한 변수
         self.x, self.y = x, y
         self.size = size
@@ -80,9 +80,9 @@ class Pimento2:
 class Pimento3:
     image = None
 
-    def __init__(self, x = 0, y = 0, size = 1):
+    def __init__(self, x = 300, y = 300, size = 1):
         if Pimento3.image == None:
-            Pimento3.image = load_image('/asset/topping/pimento3.png')
+            Pimento3.image = load_image('asset/3. topping/pimento3.png')
         # 위치 크기 조절을 위한 변수
         self.x, self.y = x, y
         self.size = size
