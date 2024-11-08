@@ -4,9 +4,9 @@ from pico2d import *
 class Pimento1:
     image = None
 
-    def __init__(self, x = 0, y = 0, size = 1):
+    def __init__(self, x = 400, y = 400, size = 1):
         if Pimento1.image == None:
-            Pimento1.image = load_image('/asset/topping/pimento1.png')
+            Pimento1.image = load_image('asset/3. topping/pimento1.png')
         # 위치 크기 조절을 위한 변수
         self.x, self.y = x, y
         self.size = size
