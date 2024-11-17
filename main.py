@@ -1,5 +1,5 @@
 import pico2d
-import play_mode as start_mode
+import toping_mode as start_mode
 import game_framework
 
 pico2d.open_canvas()
