@@ -10,9 +10,9 @@ class Player:
 
     def set_topping(self, topping_image, topping_class):
         """선택된 토핑 이미지와 클래스 설정"""
-        self.image = load_image(f'E:\\2DGP\\2DGP_ProjectPizza\\asset\\3. topping\\{topping_image}')
-        self.topping_class = topping_class
+        self.image = load_image(f'asset/3. topping/{topping_image}')
 
+        self.topping_class = topping_class
     def update(self):
         pass
 

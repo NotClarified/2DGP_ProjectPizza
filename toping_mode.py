@@ -17,6 +17,7 @@ def handle_events():
     for event in events:
         player.handle_event(event)
         if event.type == SDL_KEYDOWN and event.key == SDLK_i:
+            select_mode.set_player(player)
             game_framework.push_mode(select_mode)
 
 def init():
