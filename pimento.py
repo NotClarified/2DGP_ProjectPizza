@@ -35,7 +35,7 @@ class Pimento1:
         if self.angle >= 360: #360도 각도에 맞춰서 360 넘기면 초기화 진행
             self.angle -= 360
         self.image.clip_composite_draw(0, 0, 54, 54, self.angle, '', self.x, self.y, self.size * 54, self.size * 54)
-        print('pimento update')
+        # print('pimento update')
     def handle_event(self, event):
         pass
 
@@ -73,7 +73,7 @@ class Pimento2:
         if self.angle >= 360: #360도 각도에 맞춰서 360 넘기면 초기화 진행
             self.angle -= 360
         self.image.clip_composite_draw(0, 0, 54, 54, self.angle, '', self.x, self.y, self.size * 54, self.size * 54)
-        print('pimento2 update')
+        # print('pimento2 update')
     def handle_event(self, event):
         pass
 
@@ -111,6 +111,6 @@ class Pimento3:
         if self.angle >= 360: #360도 각도에 맞춰서 360 넘기면 초기화 진행
             self.angle -= 360
         self.image.clip_composite_draw(0, 0, 54, 54, self.angle, '', self.x, self.y, self.size * 54, self.size * 54)
-        print('pimento3 update')
+        # print('pimento3 update')
     def handle_event(self, event):
         pass

@@ -27,3 +27,4 @@ class Player:
             if self.topping_class:
                 topping = self.topping_class(self.x, self.y)
                 game_world.add_object(topping, 1)
+

@@ -2,6 +2,7 @@ from pico2d import *
 
 import game_framework
 import game_world
+import select_mode
 from dough import Dough1
 from pimento import Pimento1, Pimento2, Pimento3
 from onion import Onion1, Onion2, Onion3
@@ -16,11 +17,13 @@ def handle_events():
     for event in events:
         player.handle_event(event)
         if event.type == SDL_KEYDOWN and event.key == SDLK_i:
-            game_framework.change_mode('select_mode')
+            game_framework.push_mode(select_mode)
 
 def init():
     global running
+    global player
 
+    player = Player()
     running = True
     pimento1 = Pimento1()
     pimento2 = Pimento2()
