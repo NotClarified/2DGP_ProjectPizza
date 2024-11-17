@@ -77,12 +77,12 @@ class Onion2:
     def handle_event(self, event):
         pass
 
-class Eggplant3:
+class Onion3:
     image = None
 
     def __init__(self, x = 300, y = 300, size = 0.1):
-        if Eggplant3.image == None:
-            Eggplant3.image = load_image('asset/3. topping/onion3.png')
+        if Onion3.image == None:
+            Onion3.image = load_image('asset/3. topping/onion3.png')
         # 위치 크기 조절을 위한 변수
         self.x, self.y = x, y
         self.size = size
